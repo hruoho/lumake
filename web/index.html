@@ -1,37 +1,75 @@
 ---
 layout: default
+osa1:
+  - href: lala
+    title: Lausekkeet ja laskutoimitukset
+    kuvaus: |
+      Käsitellään pääasiassa lausekkeiden sieventämistä ja laskujärjestystä.
+        <dl>
+        <dt>Itseisarvo, vastaluku, käänteisluku </dt>
+        <dt>Muistikaavat</dt>
+        <dd>\( (x\pm y)^2 = x^2\pm 2xy+y^2 \) </dd>
+        <dd>\( (x+y)(x-y) = x^2-y^2 \)</dd>
+        <dt>Murtoluvut</dt> 
+        <dd> Laskutoimitukset  </dd>      
+        <dd> Laventaminen</dd>
+        <dd> Supistaminen </dd>
+        <dt>Juuret ja murtopotenssi</dt>
+        
+        </dl>
+  - href: fuyh
+    title: Funktiot ja yhtälöt
+    kuvaus: |
+      Palautetaan mieliin ensimmäisen ja toisen asteen yhtälöt sekä funktion käsite.  
+      <dl>
+        <dt>Perusyhtälöt</dt>
+        <dd>\(ax+b = 0\)</dd>
+        <dd> \(ax^2+bx+c = 0\)</dd>
+        <dt>Paraabeli</dt>
+        <dt>Funktion kuvaaja</dt>
+      </dl>
+  - href: polo
+    title: Potenssi ja logaritmi
+    kuvaus: |
+      Hiotaan vielä potenssisääntöjen käyttöä. Käytetään logaritmia eksponenttiyhtälön ratkaisemiseksi.   
+      <dl>
+        <dt>Logaritmin ominaisuudet</dt>
+        <dd>\(\log_k x = y \Longleftrightarrow x = k^y\)</dd>
+        <dd> \( \log a^b = b\log a\)</dd>
+        <dt></dt>
+        <dt>Potenssisäännöt</dt>
+        <dd>\((ab)^n = a^nb^n\)</dd>
+        <dd>\((a^m)^n = a^{mn}\)</dd>
+        <dd>\(a^ma^n = a^{m+n}\)</dd>
+      </dl>
+osa2:
+  - dila: Derivaatta
+  - inla: Integraali
+  - trig: Trigonometriset funktiot
+  - tnla: Todennäköisyyslaskenta
+  - sela2: Sekalaisia tehtäviä
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Tehtävät, osa 1</h1>
+<div class="large-12 columns">
+  <h1> Osa 1</h1>
+  <hr/>
+    {% for f in page.osa1 %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.context == 'osa1' %}
-      <li>
-        <h2>  
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-      {% endif %}
+      <section class="large-12 columns">
+
+        <h3>{{ f.title }}</h3>
+
+        <div class="large-8 columns">
+          <p>{{ f.kuvaus }}</p>
+        </div>
+
+        <div class="large-4 end columns">  
+          <a class="button" href="{{f.href}}.html">Tehtävät <i class="fa fa-angle-double-right"></i></a>
+        </div>  
+
+      </section>
+
     {% endfor %}
-  </ul>
-
-  <h1 class="page-heading">Tehtävät, osa 2</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.context == 'osa2' %}
-      <li>
-        <h2>  
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

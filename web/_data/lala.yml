@@ -1,0 +1,189 @@
+---
+- ratkaisu: ''
+  tehtava:
+    - Merkitse ja laske
+    -
+      - lukujen $7$ ja $-13$ summan vastaluku
+      - lukujen $-6$ ja $8$ vastalukujen erotus
+      - lukujen $-9$ ja $-12$ summan itseisarvo
+      - lukujen $1$ ja $-10$ itseisarvojen erotus
+      - luvun $-3$ käänteisluvun ja luvun $4$ vastaluvun tulo
+      - lukujen $-5$ ja $20$ osamäärä.
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske.
+    -
+      - \((-5)^4\)
+      - \(-5^4\)
+      - '\(2^{-5}\)'
+      - '\((-2)^{-5}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske.
+    -
+      - '\(\displaystyle \left(\frac{1}{3}\right)^{-2}\)'
+      - '\(\displaystyle\left(-\frac{3}{2}\right)^{3}\)'
+      - '\(\displaystyle\left(-\frac{4}{5}\right)^{-3}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Sievennä
+    -
+      - '\(\sqrt{8}\)'
+      - '\(\sqrt{27}\)'
+      - '\(\sqrt{32}\)'
+      - '\(\sqrt{90}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske.
+    -
+      - '\(\sqrt{3}\sqrt{27}\)'
+      - '\(\displaystyle \sqrt{\frac{49}{100}}\)'
+      - '\(\left(\sqrt{2} - 1\right)\left(\sqrt{2} + 3\right)\)'
+      - '\(\displaystyle \frac{1}{2-\sqrt{3}}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Sievennä (kun $a \neq 0$).
+    -
+      - '\(\displaystyle \frac{a^2 b^2}{a}\)'
+      - \(ab(a+2a)\)
+      - \((a^3 b^2 c)^2\)
+      - '\(\displaystyle \frac{ab+ca}{a} \cdot (b-c)\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Jaa tekijöihin.
+    -
+      - '\(2a - 18\)'
+      - '\(2xy - 6x\)'
+      - '\(9abc - 7abx + ab\)'
+      - \(5y(x-3) + 2z(x-3)\)
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske ja sievennä.
+    -
+      - '\(\displaystyle \left|-\frac{5}{6} - \left(-\frac{1}{3}\right)\right|\)'
+      - '\(\displaystyle \frac{3}{2} : \frac{3}{4} - \frac{5}{3} \cdot \frac{4}{5}\)'
+      - '\(\displaystyle \frac{3}{2a} + \frac{3}{4a}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske
+    -
+      - '\(\displaystyle \frac{1}{c} + \frac{4}{2c}\)'
+      - '\(\displaystyle \frac{1+a}{a} - 1\)'
+      - '\(\displaystyle \frac{2a - 2}{2}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Sievennä
+    -
+      - \((4b+1)^2\)
+      - \((2x-3)^3\)
+      - '\(\displaystyle \frac{(x-1)(x+1)^2}{x^2-1}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Sievennä
+    -
+      - '\(\displaystyle \frac{3x^3 - 6x^2 + 9x}{-3x}\)'
+      - '\(\displaystyle \frac{4ax^5+x^2}{2x^2}\)'
+      - '\(\displaystyle \frac{x^2 -2x + 1}{x-1}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Avaa sulut ja sievennä.
+    -
+      - '\(x^2(x + 3)-(x+3)(x^2 - 1)\)'
+      - '\((a + 2)(a^2 - 2a + 4)\)'
+      - '\(\displaystyle 2y^3\left(y^2-\frac{1}{4}\right) - \frac{1}{2}y^2(2-y)\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - 'Laske\[\frac{x-1}{x} \cdot \frac{x+1}{3} - \frac{1}{3} \cdot \frac{x^2-1}{x}\]'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - 'Merkitään $a = -2$ ja $b = 5$. Merkitse lukusuoralle luvut $a$, $b$ ja $0$. Havainnollista lukusuoran avulla itseisarvoja $\left| a \right|$, $\left| b \right|$ ja $\left| a-b \right|$.'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske
+    -
+      - '\(\displaystyle \frac{5-x}{2} + \frac{1+x}{3}\)'
+      - '\(\displaystyle \frac{3y}{2} - \frac{4y+6x}{4}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske
+    -
+      - '\(\displaystyle \frac{x^2-1}{x} : \frac{3}{x}\)'
+      - '\(\displaystyle \frac{1}{y} : \frac{y}{x}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - 'Laske lausekkeen \(\displaystyle \frac{1}{n}-\frac{1}{2n}+\frac{1}{3n}\) arvo, kun tiedetään, että \(n=10\).'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske
+    -
+      - \((x-3)^2\)
+      - \((ax -b)^2\)
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske
+    -
+      - '\(\displaystyle \frac{x-1}{x} \cdot \frac{x}{2}\)'
+      - '\(\displaystyle \frac{x}{2} \cdot \frac{x-2}{2x^2}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Kerro auki
+    -
+      - '\((x + 1) (x - 2)\)'
+      - \(y(1+y)\)
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - 'Kerro auki\[(x^2-2)\left( \frac{1}{x} + 3 \right)\]'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Laske ja sievennä.
+    -
+      - '\(\displaystyle \frac{1}{2x} - \frac{x + 1}{x}\)'
+      - '\(\displaystyle \bigl(x - \frac{x}{y}\bigr)\cdot \frac{y}{y - 1}\)'
+      - '\(\displaystyle \frac{x(x-1)}{x-2} : \frac{x}{3(x-1)}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Kerro auki
+    -
+      - \(3(x+5)(x^2-2)\)
+      - \((3x-2)(y^2+x)\)
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Poista sulut
+    -
+      - \((2k-3n+4m)-(-3m+4n-1)\)
+      - '\(x(y-6) - (x-2)\ (y-4)\)'
+      - \((x-3)(y-5)(z+4)\)
+      - '\(\displaystyle-s\left(\frac{2}{t}-\frac{1}{s}\right) + 6s \cdot \frac{1}{3t}\)'
+  vastaus: ''
+- ratkaisu: ''
+  tehtava:
+    - Suorita merkityt laskutoimitukset ja mahdolliset supistukset
+    -
+      - '\(\displaystyle \frac{2}{x-2} - \frac{x}{x^2-4}\)'
+      - '\(\displaystyle \frac{3}{a + 1} - \frac{2a-1}{a^2 + 2a + 1}\)'
+      - '\(\displaystyle \frac{y + z}{y^2 - 2yz + z^2} - \frac{z}{y^2 - yz}\)'
+      - '\(\displaystyle \frac{ab-b^2}{4a^2 - b^2}\cdot \frac{2a^2 + ab}{b-a}\)'
+  vastaus: ''

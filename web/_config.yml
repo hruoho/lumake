@@ -10,3 +10,7 @@ github_username:  hruoho
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: "_sass/foundation/bower_components/foundation/scss"
+
+exclude: [bower_components/MathJax]
