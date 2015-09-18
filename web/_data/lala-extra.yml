@@ -1,0 +1,7 @@
+- Reaalilukujen \(\R\) joukkoa kuvataan usein lukusuoralla, jolloin jokainen luku vastaa yhtä suoran pistettä ja jokainen suoran piste yhtä lukua.
+- Reaaliluvun \(a\) itseisarvo \(\abs{a}\) tarkoittaa luvun etäisyyttä origosta, eli nollasta. 
+- Luvun \(a\) vastaluku on \(-a\). Se toteuttaa ehdon \(a+(-a) = 0\) ja on yhtä kaukana origosta kuin luku \(a\), eli \(\abs{a} = \abs{-a}\). 
+- |
+	Luvun \(a\neq0\) käänteisluku on \(\diplaystyle\frac{1}{a}\). Se toteuttaa puolestaan ehdon \(a\cdot \frac{1}{a} = 1\). 
+	Jos \(a\) on hyvin suuri, sen käänteisluku on hyvin pieni, ja toisin päin.
+- 

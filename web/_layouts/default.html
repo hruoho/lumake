@@ -8,7 +8,7 @@
     {% include header.html %}
 
     <div class="page-content">
-      <div class="row">
+      <div class="">
         {{ content }}
       </div>
     </div>
@@ -16,6 +16,15 @@
     {% include footer.html %}
 
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<script src="{{" /bower_components/jquery/dist/jquery.min.js "| prepend: site.baseurl}}"></script>
+<script src="{{" /bower_components/foundation/js/vendor/fastclick.js "| prepend: site.baseurl}}"></script>
+<script src="{{" /bower_components/foundation/js/foundation.min.js "| prepend: site.baseurl}}"></script>
+
+<script>
+  $(document).foundation();
+</script>
 
   </body>
 
