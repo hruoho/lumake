@@ -8,23 +8,9 @@ title: Funktiot ja yhtälöt
 	<h3>{{site.data.fuyh.size}} tehtävää</h3>
 </section>
 
-{% for tehtava in site.data.fuyh %}
+<!-- It seems that the following cannot be done dynamically ie. using variables. -->
+{% for tehtava in site.data.fuyh %} 
 
-<section>
-
-<h1 class="teht"></h1>
-{% for piece in tehtava.tehtava %}
-
-{% if piece.first %}
-<ol>
-{%for item in piece %}
-	<li> {{ item }} </li>
-{% endfor %}
-</ol>
-{% else %}
-	<p> {{piece}}</p>
-{% endif %}
-{% endfor %}
-</section>
+{% include slide.html tehtava=tehtava %}
 
 {% endfor %}

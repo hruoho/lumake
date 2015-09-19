@@ -30,42 +30,24 @@
       - \((ab)^n = a^nb^n\)
       - \((a^m)^n = a^{mn}\)
       - \(a^ma^n = a^{m+n}\)
+- context: osa1
+  href: sete1
+  title: Sekalaisia tehtäviä
+  kuvaus: |
+    Hieman epäyhtälöitä, prosenttilaskentaa ja analyyttistä geometriaa. Tehtävät ovat epäjärjestyksessä.
+  notes:
 - context: osa2
   href: dila
   title: Derivaatta
-  kuvaus: käsitellään pääasiassa lausekkeiden sieventämistä ja laskujärjestystä.
+  kuvaus: 
   notes:
-    - Itseisarvo, vastaluku, käänteisluku 
-    - Muistikaavat:
-      - \( (x\pm y)^2 = x^2\pm 2xy+y^2 \) 
-      - \( (x+y)(x-y) = x^2-y^2 \)
-    - Murtoluvut:
-      - Laskutoimitukset        
-      - Laventaminen
-      - Supistaminen 
-    - Juuret ja murtopotenssi
 - context: osa2
   href: inla
   title: Integraali
-  kuvaus: |
-    Palautetaan mieliin ensimmäisen ja toisen asteen yhtälöt sekä funktion käsite.  
+  kuvaus:
   notes:
-    - Perusyhtälöt:
-      - \(ax+b = 0\)
-      - \(ax^2+bx+c = 0\)
-    - Paraabeli
-    - Funktion kuvaaja
 - context: osa2
   href: trig
   title: Trigonometriset funktiot
-  kuvaus: |
-    Hiotaan vielä potenssisääntöjen käyttöä. Käytetään logaritmia eksponenttiyhtälön ratkaisemiseksi.   
+  kuvaus: 
   notes:
-    - Logaritmin ominaisuudet:
-      - \(\log_k x = y \Longleftrightarrow x = k^y\)
-      -  \( \log a^b = b\log a\)
-    - 
-    - Potenssisäännöt:
-      - \((ab)^n = a^nb^n\)
-      - \((a^m)^n = a^{mn}\)
-      - \(a^ma^n = a^{m+n}\)

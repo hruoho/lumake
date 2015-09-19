@@ -188,6 +188,16 @@ dl {
 	}
 }
 
+.site-footer{
+	font-size: 0.8em;
+	padding: rem-calc(10);
+	background: $silver;
+	margin-top: rem-calc(100);
+}
+
+.hide {
+	display:none;
+}
 
 // Or selectively include components
 // @import
