@@ -3,15 +3,6 @@
   title: Lausekkeet ja laskutoimitukset
   kuvaus: Käsitellään pääasiassa lausekkeiden sieventämistä ja laskujärjestystä.
   notes:
-    - Itseisarvo, vastaluku, käänteisluku 
-    - Muistikaavat:
-      - \( (x\pm y)^2 = x^2\pm 2xy+y^2 \) 
-      - \( (x+y)(x-y) = x^2-y^2 \)
-    - Murtoluvut:
-      - Laskutoimitukset        
-      - Laventaminen
-      - Supistaminen 
-    - Juuret ja murtopotenssi
 
 - context: osa1
   href: fuyh

@@ -9,7 +9,7 @@
 
                   <div  id="panel-{{section.href}}" class="content">
                         <div class="row">
-                              <div class="large-8 columns">
+                              <div class="large-12 columns">
                                     <p>{{ section.kuvaus }}</p>
                                     <dl>
                                           {% for n in section.notes %}
@@ -26,8 +26,16 @@
                                     </dl>
                               </div>
 
-                              <div class="large-4 end columns">  
-                                    <a class="button" href="{{section.href}}.html">Tehtävät <i class="fa fa-angle-double-right"></i></a>
+                              <div class="large-12 right columns"> 
+                                    <ul class="button-group even-4">
+                                      <li> <a class="button" href="{{section.href}}extra.html"> <i class="fa fa-lightbulb-o"></i> Huomioita</a></li>
+                                      <li><a class="button" href="{{section.href}}.html"><i class="fa fa-download"></i> Pdf </a></li>
+                                      <li><a class="button" href="{{section.href}}.html"><i class="fa fa-mobile"> Mobiili</i></a></li>
+                                      <li> <a class="button" href="{{section.href}}extra.html"> <i class="fa fa-angle-double-right"></i> Stack-tehtävät</a></li>
+                                    </ul> 
+                                                  
+
+                                    
                               </div>  
                         </div>
                   </div>
