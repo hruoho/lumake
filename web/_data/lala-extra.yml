@@ -1,4 +1,3 @@
--   content: "Lausekkeet ja laskutoimitukset"
 -   content: |
         Reaalilukujen joukkoa \\(\R\\) voi kuvata **lukusuoralla**. Silloin jokainen reaaliluku vastaa yhtä lukusuoran pistettä ja 
         jokainen suoran piste yhtä lukua.
@@ -11,7 +10,7 @@
         Luku ja sen vastaluku ovat yhtä kaukana origosta eli pätee \\(\abs{a} = \abs{-a}\\).
     img: itseisarvo.svg
 -   content: |
-        Luvun \\(a\neq0\\) **käänteisluku** on \\(\displaystyle a^{-1} = \frac{1}{a}\\). Se toteuttaa ehdon \\(\displaystyle a\cdot \frac{1}{a} = 1\\). 
+        Luvun \\(a\neq0\\) **käänteisluku** on \\(\displaystyle a^{-1} = \frac{1}{a}\\). Se toteuttaa ehdon \\(\displaystyle a\cdot a^{-1} = 1\\). 
 
         Esimerkiksi \\[ 3^{-1}=\frac{1}{3} \qquad\text{ ja }\qquad \left(\frac{1}{6}\right)^{-1} = 6.\\]
 
