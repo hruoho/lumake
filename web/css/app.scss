@@ -159,6 +159,14 @@ dl {
 	}
 }
 
+.extra-tabs{
+	.tab-title{
+		&.active > a{
+			background: $color-primary-4;
+		}
+	}
+}
+
 .color-one{
 	background: $color-secondary-1-1;
 }
