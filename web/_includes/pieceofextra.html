@@ -1,6 +1,7 @@
 {% assign piece = include.piece %}
 
-<div class="{% cycle 'color-one', 'color-two', 'color-three' , 'color-four' %} huge-text">
+<div class="color-box huge-text">
+<!-- {% cycle 'color-one', 'color-two', 'color-three' , 'color-four' %} huge-text"> -->
 
 	<p>{{piece.content | markdownify}}</p>
 
