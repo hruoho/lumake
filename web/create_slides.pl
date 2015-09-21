@@ -26,6 +26,7 @@ layout: slides
 title: $title
 ---
 
+
 <section>
 	<h1>{{page.title}}</h1>
 	<h3>{{site.data.$href.size}} tehtävää</h3>
@@ -35,18 +36,49 @@ title: $title
 
 <section>
 
-<h1 class="teht"></h1>
 {% for piece in tehtava.tehtava %}
 
-{% if piece.first %}
-<ol>
-{% for item in piece %}
-	<li> {{ item }} </li>
-{% endfor %}
-</ol>
-{% else %}
-	<p> {{piece}} </p>
+{% if forloop.first %}
+
+	<section>
+
+	<h1 class="teht"></h1>
+
+	<p> {{ piece }} </p>
+
 {% endif %}
+
+{% if piece.first %}
+	{% case piece.first[0] %}
+		{% when 'img' %}
+			<div style="text-align:center">
+				<img style="width:80%; background:white" src="/imgs/{{piece.first[1] }}">
+			</div>
+		{% else %}
+			<ol>
+			{% for item in piece %}
+
+				<li> {{ item }} </li>
+
+			{% endfor %}
+			</ol>
+	{% endcase %}
+
+{% elsif forloop.index > 1 %}
+
+	</section>
+
+	<section>
+		{{ piece }}
+
+{% endif %}
+
+{% if forloop.last %}
+
+	</section>
+
+{% endif %}
+
 {% endfor %}
 </section>
 
