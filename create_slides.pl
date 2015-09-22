@@ -52,7 +52,7 @@ title: $title
 	{% case piece.first[0] %}
 		{% when 'img' %}
 			<div style="text-align:center">
-				<img style="width:80%; background:white" src="/imgs/{{piece.first[1] }}">
+				<img style="width:80%; background:white" src="{{'/imgs/{{piece.first[1]' | prepend: site.baseurl }}">
 			</div>
 		{% else %}
 			<ol>
