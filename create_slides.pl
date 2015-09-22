@@ -6,7 +6,7 @@ use utf8;
 
 my $data = '_data/data.yml';
 
-my $context = 'osa2';
+my $context = 'osa1';
 
 binmode STDIN, 'utf8';
 binmode STDOUT, 'utf8';
@@ -52,7 +52,7 @@ title: $title
 	{% case piece.first[0] %}
 		{% when 'img' %}
 			<div style="text-align:center">
-				<img style="width:80%; background:white" src="{{'/imgs/{{piece.first[1]' | prepend: site.baseurl }}">
+				<img style="width:80%; background:white" src="{{ {{piece.first[1] | prepend: '/imgs/' | prepend: site.baseurl }}">
 			</div>
 		{% else %}
 			<ol>
