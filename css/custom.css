@@ -1,0 +1,23 @@
+ol li {
+	list-style-type: lower-latin !important;
+}
+
+ol li {
+	padding: 15px 40px !important;
+}
+
+section{
+	text-align: left !important;
+}
+
+h1.teht {
+	font-size: 1.1em !important;
+}
+
+p {
+	padding-left: 1em !important;
+}
+
+ol {
+	padding-left: 2em !important;
+}
