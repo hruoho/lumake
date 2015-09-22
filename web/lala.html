@@ -1,0 +1,30 @@
+---
+layout: slides
+title: Lausekkeet ja laskutoimitukset
+---
+
+<section>
+	<h1>{{page.title}}</h1>
+	<h3>{{site.data.lala.size}} tehtävää</h3>
+</section>
+
+{% for tehtava in site.data.lala %}
+
+<section>
+
+<h1 class="teht"></h1>
+{% for piece in tehtava.tehtava %}
+
+{% if piece.first %}
+<ol>
+{%for item in piece %}
+	<li> {{ item }} </li>
+{% endfor %}
+</ol>
+{% else %}
+	<p> {{piece}}</p>
+{% endif %}
+{% endfor %}
+</section>
+
+{% endfor %}

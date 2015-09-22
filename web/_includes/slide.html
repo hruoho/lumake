@@ -1,0 +1,16 @@
+<section>
+{% assign tehtava = include.tehtava %}
+<h1 class="teht"></h1>
+{% for piece in tehtava.tehtava %}
+
+{% if piece.first %}
+<ol>
+{%for item in piece %}
+	<li> {{ item }} </li>
+{% endfor %}
+</ol>
+{% else %}
+	<p> {{piece}}</p>
+{% endif %}
+{% endfor %}
+</section>

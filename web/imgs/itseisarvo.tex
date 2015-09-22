@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usetikzlibrary{patterns,arrows,decorations.pathreplacing}
+\begin{document}
+\begin{tikzpicture}[domain=-2:2,samples=100,scale=1.0,>=latex]
+%\tikzset{bgrid/.style={help lines,color=blue!10,very thin}}
+
+%\draw[bgrid] (-1.5,-3.5) grid (7.5,3.5);
+
+\draw[->, color=black] (-1.5,0) -- (7.5,0) node[right] {$\mathbb{R}$};
+\begin{scriptsize}
+\draw (2,0.1) -- (2,-0.1) node[below] {$0$};
+
+\draw (-1,0.1) -- (-1,-0.1) node[below] {$a$};
+
+\draw (5,0.1) -- (5,-0.1) node[below] {$-a$};
+
+%\draw (3.5,0.5) node {$\left|a\right|$};
+
+
+\draw [decorate, decoration={brace,amplitude=5pt}, yshift=5pt] (2,0) -- (5,0) node[above, midway, yshift=5pt] {\footnotesize $\left|a\right|$};
+
+\end{scriptsize}
+
+\end{tikzpicture}
+\end{document}

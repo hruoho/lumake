@@ -1,0 +1,15 @@
+---
+layout: slides
+title: Potenssi ja logaritmi
+---
+
+<section>
+	<h1>{{page.title}}</h1>
+	<h3>{{site.data.polo.size}} tehtävää</h3>
+</section>
+
+{% for tehtava in site.data.polo %}
+
+{% include slide.html tehtava=tehtava %}
+
+{% endfor %}

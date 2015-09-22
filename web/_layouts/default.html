@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="row">
+
+    {% include header.html %}
+
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+    </div>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <script src="{{" /bower_components/jquery/dist/jquery.min.js "| prepend: site.baseurl}}"></script>
+    <script src="{{" /bower_components/foundation/js/vendor/fastclick.js "| prepend: site.baseurl}}"></script>
+    <script src="{{" /bower_components/foundation/js/foundation.min.js "| prepend: site.baseurl}}"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+
+</html>
