@@ -6442,9 +6442,5 @@ body {
   margin: 0 auto 48px;
   -webkit-text-size-adjust: 100%;
   /* Stops Mobile Safari from auto-adjusting font-sizes */
-  background-image: -moz-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: -webkit-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: -o-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: -ms-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
+  background-image: url("/lumake/imgs/bg.png");
   background-color: white; }
