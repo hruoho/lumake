@@ -6,8 +6,8 @@
 </description>
     <link>http://hruoho.github.io/lumake/</link>
     <atom:link href="http://hruoho.github.io/lumake/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Sep 2015 18:22:47 +0300</pubDate>
-    <lastBuildDate>Tue, 22 Sep 2015 18:22:47 +0300</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 12:14:04 +0300</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 12:14:04 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -18,7 +18,7 @@
 
 
 &lt;div&gt;
-&lt;p&gt;{&quot;content&quot;=&gt;&quot;Reaalilukujen joukkoa \\\\(\\R\\\\) voi kuvata **lukusuoralla**. Silloin jokainen reaaliluku vastaa yhtä lukusuoran pistettä ja \njokainen suoran piste yhtä lukua.\n![](imgs/lukusuora.svg)\n&quot;, &quot;img&quot;=&gt;&quot;lukusuora.svg&quot;}&lt;/p&gt;
+&lt;p&gt;{&quot;content&quot;=&gt;&quot;Reaalilukujen joukkoa \\\\(\\R\\\\) voi kuvata **lukusuoralla**. Silloin jokainen reaaliluku vastaa yhtä lukusuoran pistettä ja \njokainen suoran piste yhtä lukua.\n\n![](imgs/lukusuora.svg){: style=\&quot;width:90%\&quot;}\n&quot;}&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -30,7 +30,7 @@
 
 
 &lt;div&gt;
-&lt;p&gt;{&quot;content&quot;=&gt;&quot;Luvun \\\\(a\\\\) **vastaluku** on \\\\(-a\\\\). Se on reaaliluku, joka toteuttaa ehdon \\\\(a+(-a) = 0\\\\). \n\nLuku ja sen vastaluku ovat yhtä kaukana origosta eli pätee \\\\(\\abs{a} = \\abs{-a}\\\\).\n&quot;, &quot;img&quot;=&gt;&quot;itseisarvo.svg&quot;}&lt;/p&gt;
+&lt;p&gt;{&quot;content&quot;=&gt;&quot;Luvun \\\\(a\\\\) **vastaluku** on \\\\(-a\\\\). Se on reaaliluku, joka toteuttaa ehdon \\\\(a+(-a) = 0\\\\). \n\nLuku ja sen vastaluku ovat yhtä kaukana origosta eli pätee \\\\(\\abs{a} = \\abs{-a}\\\\).\n![](imgs/itseisarvo.svg){: style=\&quot;width:90%\&quot;}\n&quot;}&lt;/p&gt;
 &lt;/div&gt;
 
 

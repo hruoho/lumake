@@ -27,20 +27,16 @@
   <body>
 
     <header class="extra-header">
+  <div class="row">
+  <div class="small-12 columns">
+    <h1> 
+     <a href ="/lumake/">Lukiomatematiikan kertauskurssi<small> 2015 </small></a>
+    </h1>
+   <h2>Huomioita ja muistiinpanoja <small>osa 1</small></h2>
+   </div>
+ </div>
 
- <!--  <div class="">
-    <div class="large-12 columns">
-
-   	
-    <nav class="top-nav">
-    </nav>
-    </div>
-  </div> -->
-  <h1> 
-   		<a href ="/lumake/">Lukiomatematiikan kertauskurssi, syksy 2015 </a>
-   		<small> <a href="/lumake/">Helsingin yliopisto / Matematiikan ja tilastotieteen laitos</a></small>
-   	</h1>
-    <div class="hide">
+ <div class="hide">
       \(
       \newcommand{\abs}[1]{\left|#1\right|}
       \newcommand{\R}{\mathbb{R}}
@@ -52,7 +48,7 @@
 
     <div class="page-content">
       <div class="">
-        <ul class="tabs extra-tabs" data-tab data-options="deep_linking:true">
+        <ul class="tabs vertical extra-tabs" data-tab data-options="deep_linking:true">
     <li class="tab-title active"><a href="#lala">Lausekkeet ja laskutoimitukset</a></li>
     <li class="tab-title"><a href="#fuyh">Funktiot ja yhtälöt</a></li>
     <li class="tab-title"><a href="#polo">Potenssi ja logaritmi</a></li>
@@ -68,14 +64,11 @@
 <!-- color-one huge-text"> -->
 
 	<p><p>Reaalilukujen joukkoa \(\R\) voi kuvata <strong>lukusuoralla</strong>. Silloin jokainen reaaliluku vastaa yhtä lukusuoran pistettä ja 
-jokainen suoran piste yhtä lukua.
-<img src="imgs/lukusuora.svg" alt="" /></p>
+jokainen suoran piste yhtä lukua.</p>
+
+<p><img src="imgs/lukusuora.svg" alt="" style="width:90%" /></p>
 </p>
 
-	
-	<div class="centered">
-		<img width="700" src="/lumake/imgs/lukusuora.svg">
-	</div>
 	
 	
 </div>
@@ -103,13 +96,10 @@ jokainen suoran piste yhtä lukua.
 
 	<p><p>Luvun \(a\) <strong>vastaluku</strong> on \(-a\). Se on reaaliluku, joka toteuttaa ehdon \(a+(-a) = 0\).</p>
 
-<p>Luku ja sen vastaluku ovat yhtä kaukana origosta eli pätee \(\abs{a} = \abs{-a}\).</p>
+<p>Luku ja sen vastaluku ovat yhtä kaukana origosta eli pätee \(\abs{a} = \abs{-a}\).
+<img src="imgs/itseisarvo.svg" alt="" style="width:90%" /></p>
 </p>
 
-	
-	<div class="centered">
-		<img width="700" src="/lumake/imgs/itseisarvo.svg">
-	</div>
 	
 	
 </div>
@@ -512,15 +502,19 @@ Välitermien kertoimet selviävät eksponenttia vastaavalta kolmion riviltä.</p
     </div>
 
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/lumake/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/lumake/bower_components/foundation/js/vendor/fastclick.js"></script>
+    <script src="/lumake/bower_components/foundation/js/foundation.min.js"></script>
 
+    <script>
+      $(document).foundation();
+    </script>
 
-<script src="/lumake/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/lumake/bower_components/foundation/js/vendor/fastclick.js"></script>
-<script src="/lumake/bower_components/foundation/js/foundation.min.js"></script>
-
-<script>
-  $(document).foundation();
-</script>
+    <script>
+      $("img").each(function(){
+        $(this).wrap("<div class='text-center'>");
+      });
+    </script
 
   </body>
 
