@@ -39,14 +39,21 @@ body > .row{
 
 .extra-header{
 	h1{
-		font-size:2em;
+		//font-size:2em;
 		color: $color-primary-4;
-		padding: rem-calc(10) 0;
+		padding: rem-calc(45) 0 rem-calc(40) rem-calc(0);
 		a {
 			color: inherit;
 		}
 	}
 	margin-bottom: rem-calc(0);
+}
+
+dl{
+	font-size: rem-calc(30);
+	dd {
+		padding-left:rem-calc(20);
+	}
 }
 
 // Tweak default button color
@@ -61,31 +68,31 @@ body > .row{
 
 	.bundles {
 
-	  @include accordion-container;
+		@include accordion-container;
 
-	  .bundle  {		
+		.bundle  {		
 
-	    @include accordion-navigation;
+			@include accordion-navigation;
 
-	    > a{
-	    	background-color: $color-primary-2;
-	    	color: white;
-	    	&:hover {
-	    		background: $color-primary-0;
-	    	}
-	    	
-	    }
-	    &.active {
-	    	> a {
-	    		background: $color-primary-0;
-	    	}
-	    }
+			> a{
+				background-color: $color-primary-2;
+				color: white;
+				&:hover {
+					background: $color-primary-0;
+				}
 
-	  }
+			}
+			&.active {
+				> a {
+					background: $color-primary-0;
+				}
+			}
 
-	  .content  {
-	    @include accordion-content;
-	  }
+		}
+
+		.content  {
+			@include accordion-content;
+		}
 	}
 }
 
@@ -167,18 +174,42 @@ body > .row{
 }
 
 body{
-  width: 100%;
-  margin: 0 auto 48px;
-  -webkit-text-size-adjust: 100%;
-  /* Stops Mobile Safari from auto-adjusting font-sizes */
-  background-image: -moz-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: -webkit-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: -o-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: -ms-linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png");
-  background-image: linear-gradient(rgba(255, 255, 128, 0.1), rgba(255, 255, 128, 0.1)), url("/imgs/bg.png"); 
   background-color: white;
 }
 
+.button{
+	i {
+		padding-right: rem-calc(15);
+	}
+}
+@media #{$medium-up} {  
+      .tabs {
+        &.vertical {
+          float: none;
+          margin: 0;
+          margin-bottom: 0 !important;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      .tabs-content {
+        &.vertical {
+          float: $default-float;
+          margin-#{$default-float}: -1px;
+          max-width: 80%;
+          padding-#{$default-float}: 1rem;
+          width: 80%;
+        }
+      }
+    }
+
+footer{
+	margin-top: rem-calc(100);
+	.columns{
+		padding: rem-calc(40);
+	}
+}
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",

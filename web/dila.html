@@ -3,6 +3,7 @@ layout: slides
 title: Derivaatta
 ---
 
+
 <section>
 	<h1>{{page.title}}</h1>
 	<h3>{{site.data.dila.size}} tehtävää</h3>
@@ -28,7 +29,7 @@ title: Derivaatta
 	{% case piece.first[0] %}
 		{% when 'img' %}
 			<div style="text-align:center">
-				<img style="width:80%; background:white" src="/imgs/{{piece.first[1] }}">
+				<img style="width:80%; background:white" src="{{ {{piece.first[1] | prepend: '/imgs/' | prepend: site.baseurl }}">
 			</div>
 		{% else %}
 			<ol>

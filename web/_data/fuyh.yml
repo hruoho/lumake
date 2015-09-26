@@ -8,7 +8,12 @@
   vastaus: ''
 - ratkaisu: ''
   tehtava:
-    - '\item\( F = ma\,; \quad m = \text{?}\)\item\( A = \pi r^2\,; \quad r = \text{?}\)\item\( a_n = \frac{v^2}{r}\,; \quad v = \text{?}\)\item\( v = v_0 + at\,; \quad a = \text{?}\)\end{kohdat}'
+    - Ratkaise
+    - 
+      - \(m\), kun \( F = ma\)
+      - \(r\), kun \( A = \pi r^2\)
+      - \(v\), kun \(a_n = \frac{v^2}{r}\)
+      - \(a\), kun \(v = v_0 + at\)
   vastaus: ''
 - ratkaisu: ''
   tehtava:
@@ -58,7 +63,7 @@
   vastaus: ''
 - ratkaisu: ''
   tehtava:
-    - 'Olkoon $$f(x)=\frac{2^x+4}{x}.$$ Laske, mikäli mahdollista:'
+    - 'Olkoon $\displaystyle f(x)=\frac{2^x+4}{x}.$ Laske, mikäli mahdollista:'
     -
       - \(f(2)\)
       - '\(\displaystyle f\left(\frac{1}{3}\right)\)'
@@ -83,7 +88,9 @@
   vastaus: ''
 - ratkaisu: ''
   tehtava:
-    - 'Mitä funktiota seuraava kuvaaja esittää?\begin{center}\includegraphics{figs/kuvaaja.eps}\end{center}'
+    - 'Mitä funktiota seuraava kuvaaja esittää?'
+    - 
+    - img: 'kuvaaja.svg'
   vastaus: ''
 - ratkaisu: ''
   tehtava:
@@ -98,7 +105,9 @@
   vastaus: ''
 - ratkaisu: ''
   tehtava:
-    - 'Olkoon $f(x)=\sqrt{x}$. Mikä on funktion $f$ arvo pisteessä $32$? Mikä on kuvassa näkyvän funktion arvo pisteessä $4$?\begin{center}\includegraphics{figs/neliojuuri.eps}\end{center}'
+    - 'Olkoon $f(x)=\sqrt{x}$. Mikä on funktion $f$ arvo pisteessä $32$? Mikä on kuvassa näkyvän funktion arvo pisteessä $4$?'
+    -
+    - img: 'neliojuuri.svg'
   vastaus: ''
 - ratkaisu: ''
   tehtava:
@@ -128,7 +137,9 @@
   vastaus: ''
 - ratkaisu: ''
   tehtava:
-    - 'Mitkä seuraavista kuvaajista esittävät funktiota? Kielteisessä tapauksessa perustele, miksei kuvaaja esitä funktiota.\begin{center}\includegraphics{figs/kuvaajia.eps}\end{center}'
+    - 'Mitkä seuraavista kuvaajista esittävät funktiota? Kielteisessä tapauksessa perustele, miksei kuvaaja esitä funktiota.'
+    -
+    - img: 'kuvaajia.svg'
   vastaus: ''
 - ratkaisu: ''
   tehtava:

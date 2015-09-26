@@ -7,7 +7,7 @@
 
 	{% if piece.img %}
 	<div class="centered">
-		<img width="700" src="/imgs/{{piece.img}}">
+		<img width="700" src="{{piece.img | prepend: '/imgs/' | prepend: site.baseurl}}">
 	</div>
 	{% endif %}
 	
