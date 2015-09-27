@@ -57,6 +57,20 @@ title: Lausekkeet ja laskutoimitukset
 {% endif %}
 
 {% endfor %}
+
+	<section>
+	<h2> Vastaus: </h2>
+	{% if tehtava.vastaus.size > 1 %}
+	<ol>
+		{% for v in tehtava.vastaus %}
+		<li> {{v}} </li>
+		{% endfor %}
+	</ol>
+	{% else %}
+	{{tehtava.vastaus}}
+	{% endif %}
+
+	</section>
 </section>
 
 {% endfor %}

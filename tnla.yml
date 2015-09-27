@@ -3,7 +3,7 @@ ratkaisu: ''
 tehtava:
   - |
     Luokan valaistusta kontrolloidaan viidellä toisistaan riippumattomalla katkaisijalla.  
-    Kuinka monella tavalla luokka voidaan valaista? Entä kuinka monella tavalla luokkavoidaan valaista niin, 
+    Kuinka monella tavalla luokka voidaan valaista? Entä kuinka monella tavalla luokka voidaan valaista niin, 
     että ainakin yksi katkaisijoista on off-asennossa?
 vastaus: ''
 ---
@@ -22,7 +22,7 @@ vastaus: ''
 ---
 ratkaisu: ''
 tehtava:
-  - 'Todista, että jos \(n\) on alkuluku, \(\displaystyle \binom{n}{k}\) on jaollinen luvulla n, kun \(k = 1, 2, \ldots, n - 1\). '
+  - 'Todista, että jos \(n\) on alkuluku, \(\displaystyle \binom{n}{k}\) on jaollinen luvulla \(n\), kun \(k = 1, 2, \ldots, n - 1\). '
 vastaus: ''
 ---
 ratkaisu: ''
@@ -107,7 +107,7 @@ vastaus: ''
 ---
 ratkaisu: ''
 tehtava:
-  - 'Rahaa heitetään 10 kertaa.  Mikä on todennäköisyys sille, että kruunu esiintyy enintään 8 kertaa? (YO lyhyt kevät 1973)'
+  - 'Rahaa heitetään 10 kertaa.  Mikä on todennäköisyys sille, että kruunu esiintyy enintään 8 kertaa? (YO k1973)'
 vastaus: ''
 ---
 ratkaisu: ''
@@ -127,5 +127,5 @@ tehtava:
   -
     - ylinopeutta
     - vähintään 100 km/h
-  - 'kun nopeuksien jakauma on normaali ? (YO lyhyt kevät 1989)'
+  - 'kun nopeuksien jakauma on normaali ? (YO k1989)'
 vastaus: ''
