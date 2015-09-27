@@ -13,6 +13,7 @@
       - Supistaminen 
     - Juuret ja murtopotenssi
 
+
 - context: osa1
   href: fuyh
   title: Funktiot ja yhtälöt
@@ -24,6 +25,7 @@
       - \(ax^2+bx+c = 0\)
     - Paraabeli
     - Funktion kuvaaja
+
 
 - context: osa1
   href: polo
@@ -39,6 +41,7 @@
       - \((ab)^n = a^nb^n\)
       - \((a^m)^n = a^{mn}\)
       - \(a^ma^n = a^{m+n}\)
+
 - context: osa2
   href: dila
   title: Derivaatta
@@ -53,6 +56,7 @@
       - Laventaminen
       - Supistaminen 
     - Juuret ja murtopotenssi
+
 - context: osa2
   href: inla
   title: Integraali
@@ -64,6 +68,7 @@
       - \(ax^2+bx+c = 0\)
     - Paraabeli
     - Funktion kuvaaja
+
 - context: osa2
   href: trig
   title: Trigonometriset funktiot
