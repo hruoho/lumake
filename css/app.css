@@ -6338,11 +6338,15 @@ body > .row {
 .extra-header {
   margin-bottom: 0; }
   .extra-header h1 {
-    font-size: 2em;
     color: #0A1543;
-    padding: 0.625rem 0; }
+    padding: 2.8125rem 0 2.5rem 0; }
     .extra-header h1 a {
       color: inherit; }
+
+dl {
+  font-size: 1.875rem; }
+  dl dd {
+    padding-left: 1.25rem; }
 
 .button {
   background-color: #0A1543; }
@@ -6438,8 +6442,26 @@ body > .row {
   display: none; }
 
 body {
-  width: 100%;
-  margin: 0 auto 48px;
-  -webkit-text-size-adjust: 100%;
-  /* Stops Mobile Safari from auto-adjusting font-sizes */
   background-color: white; }
+
+.button i {
+  padding-right: 0.5rem; }
+
+@media only screen and (min-width: 40.0625em) {
+  .tabs.vertical {
+    float: none;
+    margin: 0;
+    margin-bottom: 0 !important;
+    max-width: 100%;
+    width: 100%; }
+
+  .tabs-content.vertical {
+    float: left;
+    margin-left: -1px;
+    max-width: 80%;
+    padding-left: 1rem;
+    width: 80%; } }
+footer {
+  margin-top: 6.25rem; }
+  footer .columns {
+    padding: 2.5rem; }
