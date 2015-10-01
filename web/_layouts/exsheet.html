@@ -65,112 +65,122 @@
             </script>
 
             <script type="text/x-mathjax-config">
-                MathJax.Hub.Config({
-                    extensions: ["tex2jax.js"],
-                    jax: ["input/TeX", "output/HTML-CSS"],
-                    tex2jax: {
-                        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-                        processEscapes: false
-                  },
-                  "HTML-CSS": { availableFonts: ["TeX"] }
-            });
-          </script>
+              MathJax.Hub.Config({
+                extensions: ["tex2jax.js"],
+                jax: ["input/TeX", "output/HTML-CSS"],
+                tex2jax: {
+                  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                  displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                  processEscapes: false
+            },
+            "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+        </script>
 
-          <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
-          <script src="{{"/bower_components/jquery/dist/jquery.min.js "| prepend: site.baseurl}}"></script>
-          <script src="{{"/bower_components/foundation/js/vendor/fastclick.js "| prepend: site.baseurl}}"></script>
-          <script src="{{"/bower_components/foundation/js/foundation.min.js "| prepend: site.baseurl}}"></script>
+        <script src="{{"/bower_components/jquery/dist/jquery.min.js "| prepend: site.baseurl}}"></script>
+        <script src="{{"/bower_components/foundation/js/vendor/fastclick.js "| prepend: site.baseurl}}"></script>
+        <script src="{{"/bower_components/foundation/js/foundation.min.js "| prepend: site.baseurl}}"></script>
 
-          <script>
+        <script>
             $(document).foundation();
       </script>
 
       <script type="text/javascript">
-            var active;
-            var ctrl_buttons = $("#control-buttons");
+
+            //var active = $(".zen");
+            var ctrl_buttons = $(".ctrl-button");
+
             ctrl_buttons.hide();
 
             $('section').click(function(){
-                  // Ensure that only current section is in zen-mode
-                  $('section').not(this).removeClass('zen');
+                  toggleSection( $(this) );
+            });
 
-                  // Where to scroll
-                  var divPosition = $(this).offset();
-                  // Scroll...
-                  $('html, body').animate({scrollTop: divPosition.top}, 10);
+            ctrl_buttons.click(function(e){
+                  e.preventDefault();
 
-                  // If soon in zen mode, set active to current id
-                  if( ! $(this).hasClass('zen') )
-                  {
-                        active = $(this).attr('id');
+                  var active = $(".zen");
+                  var id = $(this).attr('id');
+
+                  switch(id) {
+                        case 'prev': {
+                              toggleSection( active.prev() );
+                              break;
+                        }
+                        case 'next': {
+                              toggleSection( active.next() );
+                              break;
+                        }
+                        case 'answer': {
+                              $(".zen").find('.answer').toggle();
+                        }
                   }
-                  else
-                  {
-                        active = null;
+            });
+
+
+
+            function toggleSection(s){
+                  if( s.objectType !== 'undefined' ){
+
+                        $('section').not(s).removeClass('zen');
+                        s.toggleClass('zen');
+
+                        toggleButtons( s );
+                        hideAnswers();
+
+                        // Where to scroll
+                        var divPosition = s.offset();
+
+                        // Scroll...
+                        $('html, body').scrollTop(divPosition.top);
                   }
-                        //location.hash="#"+$(this).attr('id');
+            }
 
-                        toggleButtons();
-                        hideAnswer();   
-                        resetAnswerLink();                     
-
-                        $(this).toggleClass('zen');
-                  });
-
-
-
-            function toggleButtons(){
-                  if (active === null) {
-                        ctrl_buttons.hide();
-                  }
-                  else{
+            function toggleButtons(e){
+                  if ( e.hasClass('zen') ) {
                         ctrl_buttons.show();
                   }
+                  else{
+                        ctrl_buttons.hide();
+                  }
             }
 
-            function hideAnswer() {
+            function hideAnswers() {
                   $("div.answer").hide();
             }
-
-            function resetAnswerLink() {
-                  ctrl_buttons.find('.answer').text('Näytä vastaus');
+            function toggleAnswer(e) {
+                  var answer = e.find("div.answer");
+                  if ( e.hasClass('zen') ) {
+                        answer.show();
+                  }
+                  else{
+                        answer.hide();
+                  }
             }
 
-            ctrl_buttons.find('a').click(function(e){
-                  e.preventDefault();
-                  var answer_box, cls, section;
+      
+$(document).keydown(function(e) {
 
-                  answer_box = $('#'+active).find('.answer');                  
-                  cls = $(this).attr('class');
-                  section = $('#'+active).closest('section');
+    switch(e.which) {
+                    case 37: // left
+                    break;
 
-                  resetAnswerLink();
-                  hideAnswer();
-                  
-                  switch(cls){
-                        case 'prev': 
-                        section.prev().click();
-                        break;
-                        
-                        case 'next': 
-                        section.next().click();
-                        break;
-                        
-                        case 'answer': 
-                        answer_box.toggle();
-                        if(answer_box.is(':hidden'))
-                        {
-                              $(this).text('Näytä vastaus');
-                        }
-                        else
-                        {
-                             $(this).text('Piilota');
-                       }
-                 }
-           });
+                    case 38: // up
+                    break;
+
+                    case 39: // right
+                    break;
+
+                    case 40: // down
+                    break;
+
+                    default: return; // exit this handler for other keys
+              }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
+          });
 </script>
 </body>
 </html>

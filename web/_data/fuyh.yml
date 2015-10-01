@@ -6,8 +6,8 @@
       - \(\displaystyle \frac{x+2}{4}=\frac{x-1}{7}\)
       - '$\displaystyle \frac{3x+1}{4x+2}=3 $'
   vastaus:
-    - \( x= -6\)
-    - \( \displaystyle x = -\frac{5}{9}\)
+    - \( x = -6 \)
+    - \( \displaystyle x = -\frac{5}{9} \)
 - ratkaisu: ''
   tehtava:
     - Ratkaise
@@ -109,23 +109,23 @@
       Piirrä funktion $f(x)=|x|$ kuvaaja.
   vastaus:
     - img: 'kuvaaja_itseisarvo.svg'
-      asd: asdd
 - ratkaisu: ''
   tehtava:
     - 'Piirrä funktion \(f\colon\R\to\R\), $f(x)= 5$ kuvaaja.'
   vastaus:
-    - \(x\)-akselin suuntainen suora, joka kulkee pisteen \((0,5)\) kautta.
+    - img: suora_y-5.svg
 - ratkaisu: ''
   tehtava:
     - |
       Määritellään funktio $f$ seuraavasti:
       \[f(x) =\begin{cases}0, & \text{ jos } x < 0 \\x+1, & \text{ jos } x \geq 0.\end{cases}\]
       Piirrä funktion $f$ kuvaaja.
-  vastaus: ''
+  vastaus:
+    - img: pal_mar.svg
 - ratkaisu: ''
   tehtava:
     - 'Mitä funktiota seuraava kuvaaja esittää?'
-    - img: 'kuvaaja.svg'
+    - img: 'suora.svg'
   vastaus: ''
 - ratkaisu: ''
   tehtava:
@@ -175,12 +175,14 @@
 - ratkaisu: ''
   tehtava:
     - Hahmottele funktion $h(x) = x^2 -4$ kuvaaja.
-  vastaus: ''
+  vastaus:
+    - img: x2-4.svg
 - ratkaisu: ''
   tehtava:
-    - 'Mitkä seuraavista kuvaajista esittävät funktiota? Kielteisessä tapauksessa perustele, miksei kuvaaja esitä funktiota.'
-    -
-    - img: 'kuvaajia.svg'
+    - |
+      Mitkä seuraavista kuvaajista esittävät funktiota \(\R\to\R\)? 
+      Kielteisessä tapauksessa perustele, miksei kuvaaja esitä funktiota.
+    - img: 'kuvaajiako.svg'
   vastaus: ''
 - ratkaisu: ''
   tehtava:

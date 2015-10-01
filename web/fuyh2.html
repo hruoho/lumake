@@ -14,9 +14,9 @@ title: Funktiot ja yhtälöt
 </div>
 <div id="control-buttons">
 	<ul class="button-group">
-		<li><a class="prev" href="">Edellinen</a></li>
-		<li><a class="answer" href="">Näytä vastaus</a></li>
-		<li><a class="next" href="">Seuraava</a></li>
+		<li><a class="ctrl-button" id="prev" href="">Edellinen</a></li>
+		<li><a class="ctrl-button" id="answer" href="">Näytä vastaus</a></li>
+		<li><a class="ctrl-button" id="next" href="">Seuraava</a></li>
 	</ul>
 </div>
 
@@ -54,14 +54,18 @@ title: Funktiot ja yhtälöt
 		<div class="answer">
 			{% if tehtava.vastaus.size > 1 %}
 			<ol>
-				{% for item in tehtava.vastaus %}
-
-				<li> {{ item }} </li>
-
+				{% for v in tehtava.vastaus %}
+				<li> {{v}} </li>
 				{% endfor %}
 			</ol>
+			{% elsif tehtava.vastaus[0].img %}
+
+			<img src="{{tehtava.vastaus[0].img | prepend: '/imgs/' | prepend: site.baseurl}}">
+
 			{% else %}
-			{{ tehtava.vastaus[0] }}
+
+			{{tehtava.vastaus}}
+
 			{% endif %}
 
 		</div>

@@ -86,13 +86,18 @@ h1 {
 
 div.answer{
 	display:none;
+	margin-top: rem-calc(20); 
 	background: $color-secondary-2-2;
 	padding: rem-calc(20);
+	img{
+		background: white;
+	}
 }
 
 #control-buttons{
 	width: 100px;
 	position:fixed;
+	z-index: 10;
 	right: rem-calc(50);
 	bottom: rem-calc(50);
 }
