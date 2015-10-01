@@ -1,0 +1,54 @@
+-   content: |
+        Reaalilukujen joukkoa \\(\R\\) voi kuvata **lukusuoralla**. Silloin jokainen reaaliluku vastaa yhtä lukusuoran pistettä ja 
+        jokainen suoran piste yhtä lukua.
+
+        ![](imgs/lukusuora.svg){: style="width:90%"}
+-   content: |
+        Reaaliluvun \\(a\\) **itseisarvo** \\(\abs{a}\\) tarkoittaa luvun etäisyyttä origosta. Luvun itseisarvo on siis aina positiivinen tai 0. 
+-   content: |
+        Luvun \\(a\\) **vastaluku** on \\(-a\\). Se on reaaliluku, joka toteuttaa ehdon \\(a+(-a) = 0\\). 
+
+        Luku ja sen vastaluku ovat yhtä kaukana origosta eli pätee \\(\abs{a} = \abs{-a}\\).
+        ![](imgs/itseisarvo.svg){: style="width:90%"}
+        
+-   content: |
+        Luvun \\(a\neq0\\) **käänteisluku** on \\(\displaystyle a^{-1} = \frac{1}{a}\\). Se on reaaliluku ja toteuttaa ehdon 
+        \\(\displaystyle a\cdot a^{-1} = 1\\). Luku \\(0\\) on ainoa reaaliluku, jolla ei ole käänteislukua.
+
+# Jos \\(\abs{a}\\) on suuri, niin \\(\abs{a^{-1}}\\) on pieni, ja toisin päin. Tarkkaan ottaen \\(\abs{a^{-1}} = \abs{a}^{-1}\\).
+-   content: |
+        Reaalilukuja voidaan laskea yhteen ja kertoa keskenään. Lopputuloksena on edelleen reaaliluku. 
+
+        Luvun vähentäminen tarkoittaa vastaluvun lisäämistä, eli \\(a - b = a + (-b)\\).
+
+        Luvulla jakaminen tarkoittaa käänteisluvulla kertomista, eli \\( a / b = a\cdot b^{-1}\\). 
+
+        Koska luvulla \\(0\\) ei ole käänteislukua, sillä ei voida jakaa.
+
+-   content: | 
+        Reaalilukujen \\(a\\) ja \\(b\\) osamäärä on reaaliluku \\(\displaystyle\frac{a}{b}\\). Yläkertaa kutsutaan **osoittajaksi** ja alakertaa **nimittäjäksi**. 
+
+        Osamäärän **laventaminen** tarkoittaa osoittajan ja nimittäjän kertomista samalla luvulla. 
+
+        Osamäärän **supistaminen** tarkoittaa osoittajan ja nimittäjän jakamista samalla luvulla.
+-   content: |
+        Osamäärien yhteen- ja vähennyslaskua varten luvut saatetaan ensin samannimisiksi laventamalla tai supistamalla.
+
+        Kertolaskua varten osamäärien ei tarvitse olla samannimisia vaan laskutoimitus suoritetaan sekä osoittajassa että nimittäjässä.
+-   content: |
+        Lausekkeita käsitellessä seuraavat muistikaavat tulevat usein käyttöön. 
+        
+        Binomin neliö:
+        : \\(\displaystyle (x + y)^2 = x^2 + 2xy+y^2  \\)
+        : \\(\displaystyle (x - y)^2 = x^2 - 2xy+y^2  \\)
+        
+        Summan ja erotuksen tulo:
+        : \\( (x+y)(x-y) = x^2-y^2 \\)
+
+        Niiden johtaminen on suoraviivaista.
+-   content: |
+        Binomin korkeampia potensseja voi tarvittaessa käsitellä Pascalin kolmion avulla. 
+        Sen mukaan esimerkiksi \\( (a+b)^4 = a^4 +4a^3b + 6a^2b^2 +4ab^3 +b^4\\).
+        Välitermien kertoimet selviävät eksponenttia vastaavalta kolmion riviltä.
+    img: pascal.svg
+

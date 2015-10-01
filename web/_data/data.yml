@@ -1,27 +1,27 @@
 - context: osa1
   href: lala
   title: Lausekkeet ja laskutoimitukset
-  kuvaus: Käsitellään pääasiassa lausekkeiden sieventämistä ja laskujärjestystä.
+  kuvaus: Laskujärjestys, sulkujen merkitys, sieventäminen, osamäärien käsittely, potenssit.
   notes:
 
 - context: osa1
   href: fuyh
   title: Funktiot ja yhtälöt
   kuvaus: |
-    Palautetaan mieliin ensimmäisen ja toisen asteen yhtälöt sekä funktion käsite.  
+    Funktio, muuttuja, kuvaaja, ensimmäisen ja toisen asteen yhtälöt. 
   notes:
 
 - context: osa1
   href: polo
   title: Potenssi ja logaritmi
   kuvaus: |
-    Hiotaan vielä potenssisääntöjen käyttöä. Käytetään logaritmia eksponenttiyhtälön ratkaisemiseksi.   
+    Potenssisäännöt, murtopotenssi ja juuret, logaritmi, eksponenttifunktio ja -yhtälö.   
   notes:
 - context: osa1
   href: sete1
   title: Sekalaisia tehtäviä
   kuvaus: |
-    Hieman epäyhtälöitä, prosenttilaskentaa ja analyyttistä geometriaa. Tehtävät ovat epäjärjestyksessä.
+    Epäyhtälöitä, prosenttilaskentaa, geometriaa, analyyttistä geometriaa (suoran yhtälö, ympyrän yhtälö). 
   notes:
 
 - context: osa2

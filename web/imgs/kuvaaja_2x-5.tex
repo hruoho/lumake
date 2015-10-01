@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\begin{document}
+\begin{tikzpicture}[x=1cm, y=1cm,>=latex]
+\tikzset{bgrid/.style={help lines,color=blue!10,very thin}}
+
+\draw[bgrid] (-1,-1) grid (5.5,5.5);
+
+\draw[->, color=black] (-1,0) -- (5.5,0) node[right] {$x$};
+\draw[->, color=black] (0,-1) -- (0,5.5) node[above] {$y$};
+
+\foreach \x/\xtext in {-1,1,2,3,4,5}
+\draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\xtext$};
+
+\foreach \y/\ytext in {1,2,3,4,5}
+\draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\ytext$};
+
+\draw[thick,color=black,domain=2:5,smooth]
+plot (\x,{2*\x-5}) node[anchor=south] {$y = 5$};
+% \draw[dashed,color=black,domain=0:7.5,smooth]
+% plot (\x,{(-1)*(sqrt(\x))}) node[anchor=north] {$y = -\sqrt{x}$};
+% \draw[thick,color=black,domain=-1.5:5.5,samples=3]
+% plot (\x,{(\x)-2}) node[anchor=south] {$y = x - 2$};
+
+% \filldraw[black] (4,2) circle(2pt) node[anchor=south east] {$(4, 2)$};
+% \filldraw[red] (1,-1) circle(2pt);
+% \draw[red] (1.5,-1) node[anchor=west] {$(1, -1)$};
+
+\end{tikzpicture}
+\end{document}

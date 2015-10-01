@@ -1,0 +1,68 @@
+---
+layout: extra
+subtitle: Osa 2
+context: osa2
+---
+<div class="row small-collapse medium-uncollapse">
+
+    <div class="large-12 columns">
+        <div class="hide-for-large-up">
+            <ul class="tabs vertical extra-tabs" data-tab data-options="deep_linking:true">
+                {% for d in site.data.data %}
+                  {% if d.context == page.context %}
+                  <li class="tab-title active"><a href="#{{d.href}}">{{d.title}}</a></li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="show-for-large-up">
+            <ul class="tabs extra-tabs" data-tab data-options="deep_linking:true">
+                {% for d in site.data.data %}
+                  {% if d.context == page.context %}
+                  <li class="tab-title active"><a href="#{{d.href}}">{{d.title}}</a></li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="tabs-content">
+            <div class="content active" id="dila">
+                {% for piece in site.data.dila-notes %}
+
+                {% include pieceofextra.html piece=piece %}
+
+                {% endfor %}
+            </div>
+            <div class="content" id="inla">
+               {% for piece in site.data.inla-notes %}
+
+               {% include pieceofextra.html piece=piece %}
+
+               {% endfor %}
+           </div>
+           <div class="content" id="trig">
+               {% for piece in site.data.trig-notes %}
+
+               {% include pieceofextra.html piece=piece %}
+
+               {% endfor %}
+           </div>
+           <div class="content" id="tnla">
+               {% for piece in site.data.tnla-notes %}
+
+               {% include pieceofextra.html piece=piece %}
+
+               {% endfor %}
+           </div>
+           <div class="content" id="sete2">
+               {% for piece in site.data.sete2-notes %}
+
+               {% include pieceofextra.html piece=piece %}
+
+               {% endfor %}
+           </div>
+
+       </div>
+   </div>
+</div>
+
+

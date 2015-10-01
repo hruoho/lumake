@@ -3,6 +3,9 @@
 - content: Ensimmäisen asteen yhtälö
 - content: Toisen asteen yhtälö
 - content: Korkeamman asteen yhtälöt
-- content: Funktio
+- content: |
+    Funktiolla on lähtöjoukko ja maalijoukko. Esimerkiksi merkintä \(f\colon\R\to\R\) tarkoittaa funktiota \(f\), 
+    jonka lähtö- ja maalijoukko on \(\R\). Funktion arvot ovat yksikäsitteisiä. 
+    Niiden pisteiden joukkoa, jossa funktio on määritelty, kutsutaan määrittelyjoukoksi. 
 - content: Funktion kuvaaja
 - content: Määrittelyjoukko ja arvojoukko

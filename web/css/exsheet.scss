@@ -1,0 +1,98 @@
+---
+---
+@import "settings";
+@import "foundation";
+
+$color-primary-0: #AA3939;	// Main Primary color */
+$color-primary-1: #FFAAAA;
+$color-primary-2: #D46A6A;
+$color-primary-3: #801515;
+$color-primary-4: #550000;
+
+$color-secondary-1-0: #226666;	// Main Secondary color (1) */
+$color-secondary-1-1: #669999;
+$color-secondary-1-2: #407F7F;
+$color-secondary-1-3: #0D4D4D;
+$color-secondary-1-4: #003333;
+
+$color-secondary-2-0: #7B9F35;	// Main Secondary color (2) */
+$color-secondary-2-1: #D4EE9F;
+$color-secondary-2-2: #A5C663;
+$color-secondary-2-3: #567714;
+$color-secondary-2-4: #354F00;
+
+header {
+	margin-bottom: 40px;
+	border-bottom: 1px solid gray;
+}
+section {
+	margin: 20px 0;
+
+	&:not(.zen){
+		img{
+			display: none;
+		}
+	}
+
+
+	h1:hover{
+		cursor: pointer;
+	}
+
+	ol {
+		li {
+			margin-left: 10px;
+			padding: 10px;
+			list-style-type: lower-alpha;
+
+		}
+	}
+
+	&.zen{
+		//background-image: url( '{{ 'paper.jpg '| prepend: "../imgs/" | prepend:site.baseurl }}' );
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		//align-items: center;
+
+		min-height: 100vh;
+		@media #{$medium-up} {
+			padding: rem-calc(50);
+		}
+
+		$font-size: 1.5rem;
+		font-size: $font-size;
+		.MathJax{
+			
+				font-size: $font-size;
+			
+		}
+		li {
+			font-size: $font-size;
+		}
+	}
+}
+h1 {
+	&.teht {
+		font-size: 1.5em;
+	}
+}
+
+
+
+.problem{
+	padding-left: 20px;
+}
+
+div.answer{
+	display:none;
+	background: $color-secondary-2-2;
+	padding: rem-calc(20);
+}
+
+#control-buttons{
+	width: 100px;
+	position:fixed;
+	right: rem-calc(50);
+	bottom: rem-calc(50);
+}

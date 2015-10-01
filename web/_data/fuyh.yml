@@ -3,9 +3,11 @@
   tehtava:
     - Ratkaise yhtälö.
     -
-      - '$\displaystyle \frac{x+2}{4}=\frac{x-1}{7} $'
+      - \(\displaystyle \frac{x+2}{4}=\frac{x-1}{7}\)
       - '$\displaystyle \frac{3x+1}{4x+2}=3 $'
-  vastaus: ''
+  vastaus:
+    - \( x= -6\)
+    - \( \displaystyle x = -\frac{5}{9}\)
 - ratkaisu: ''
   tehtava:
     - Ratkaise
@@ -14,21 +16,29 @@
       - \(r\), kun \( A = \pi r^2\)
       - \(v\), kun \(a_n = \frac{v^2}{r}\)
       - \(a\), kun \(v = v_0 + at\)
-  vastaus: ''
+  vastaus:
+    - \(m = \frac{F}{a}\)
+    - \(r = \sqrt{\frac{A}{\pi}}\)
+    - \(v = \sqrt{ra_n}\)
+    - \(a = \frac{v - v_0 }{t}\)
 - ratkaisu: ''
   tehtava:
     - Ratkaise yhtälöistä \(x\).
     -
       - \(ax = 2x + 1\)
       - '\(2t\sqrt{x} = 3\e^t - t\)'
-  vastaus: ''
+  vastaus:
+    - \( x = \frac{1}{a-2}\)
+    - \( x = \left(\frac{3\e^t-t}{2t}\right)^2\)
 - ratkaisu: ''
   tehtava:
     - Ratkaise yhtälö
     -
-      - '\( x(\sqrt{2} - 1) = 1 - 2x \)'
+      - \( x(\sqrt{2} - 1) = 1 - 2x \)
       - \( (1-x)^2 + 3(2x+1) = (2+x)^2 \)
-  vastaus: ''
+  vastaus:
+    - \( x = \frac{1}{\sqrt{2}+1}\)
+    - Yhtälö toteutuu kaikilla \(x\in\R\).
 - ratkaisu: ''
   tehtava:
     - Ratkaise yhtälö
@@ -36,7 +46,10 @@
       - \( 5x + 7 = 8x + 4 \)
       - '\( 3x - 5(2x - 6) = 0 \)'
       - '\(\displaystyle \frac{x}{4} - \frac{2x-1}{3} = \frac{5}{6}\)'
-  vastaus: ''
+  vastaus:
+    - \( x = 1\)
+    - \( x = \frac{30}{7} \)
+    - \( x = -\frac{6}{5} \)
 - ratkaisu: ''
   tehtava:
     - Ratkaise yhtälö
@@ -45,7 +58,11 @@
       - '\(5x^2 - 2x = 0\)'
       - '\(4x^2 - 3 = 0\)'
       - \(9x^2 + 1 = 0.\)
-  vastaus: ''
+  vastaus:
+    - \( x = -2\) tai \( x = \frac{4}{3} \)
+    - \( x = 0 \) tai \( x = \frac{2}{5} \)
+    - \( x = \pm\sqrt{\frac{3}{4}} \)
+    - Ei ratkaisua.
 - ratkaisu: ''
   tehtava:
     - Ratkaise yhtälö.
@@ -53,14 +70,19 @@
       - '\(2x^2 - 5x + 3 = 0\)'
       - '\((x - 5)(1 - 3x) = 7\)'
       - '\(3x^2 - x = -1\)'
-  vastaus: ''
+  vastaus:
+    - \( x = -\frac{3}{2} \) tai \( x = 1\).
+    - \( x = \frac{8}{3}\pm\frac{2\sqrt{7}}{3} \)
+    - Ei reaalisia ratkaisuja.
 - ratkaisu: ''
   tehtava:
     - Olkoon $f(x)=x^2$. Laske
     -
       - \(f(2)\)
       - \(f(-5).\)
-  vastaus: ''
+  vastaus:
+    - 4
+    - 25
 - ratkaisu: ''
   tehtava:
     - 'Olkoon $\displaystyle f(x)=\frac{2^x+4}{x}.$ Laske, mikäli mahdollista:'
@@ -69,27 +91,40 @@
       - '\(\displaystyle f\left(\frac{1}{3}\right)\)'
       - \(f(0)\)
       - \(f(-1)\)
-  vastaus: ''
+  vastaus:
+    - 4
+    - \( 3\sqrt[3]{2} + 12 \)
+    - Ei määritelty.
+    - \( -\frac{9}{2} \)
 - ratkaisu: ''
   tehtava:
     - 'Missä kohdassa funktiot $ g(x)=5^{x} $ ja $\displaystyle h(x)=\left(\frac{1}{4}\right)^{x} $ saavat saman arvon?'
-  vastaus: ''
+  vastaus:
+    - \( x = 0 \)
 - ratkaisu: ''
   tehtava:
-    - 'Luvun $x$ itseisarvo $|x|$ määritellään seuraavasti:\[|x| =\begin{cases}x, & \text{ jos $x\ge 0$} \\-x, & \text{ jos $x < 0$}.\end{cases}\]Piirrä funktion $f(x)=|x|$ kuvaaja.'
-  vastaus: ''
+    - |
+      Luvun $x$ itseisarvo $|x|$ määritellään seuraavasti:
+      \[|x| =\begin{cases}x, & \text{ jos $x\ge 0$} \\-x, & \text{ jos $x < 0$}.\end{cases}\]
+      Piirrä funktion $f(x)=|x|$ kuvaaja.
+  vastaus:
+    - img: 'kuvaaja_itseisarvo.svg'
+      asd: asdd
 - ratkaisu: ''
   tehtava:
     - 'Piirrä funktion \(f\colon\R\to\R\), $f(x)= 5$ kuvaaja.'
-  vastaus: ''
+  vastaus:
+    - \(x\)-akselin suuntainen suora, joka kulkee pisteen \((0,5)\) kautta.
 - ratkaisu: ''
   tehtava:
-    - 'Määritellään funktio $f$ seuraavasti:\[f(x) =\begin{cases}0, & \text{ jos } x < 0 \\x+1, & \text{ jos } x \geq 0.\end{cases}\]Piirrä funktion $f$ kuvaaja.'
+    - |
+      Määritellään funktio $f$ seuraavasti:
+      \[f(x) =\begin{cases}0, & \text{ jos } x < 0 \\x+1, & \text{ jos } x \geq 0.\end{cases}\]
+      Piirrä funktion $f$ kuvaaja.
   vastaus: ''
 - ratkaisu: ''
   tehtava:
     - 'Mitä funktiota seuraava kuvaaja esittää?'
-    - 
     - img: 'kuvaaja.svg'
   vastaus: ''
 - ratkaisu: ''
@@ -98,29 +133,35 @@
     -
       - \(f(-2)\)
       - \(f(x-5).\)
-  vastaus: ''
+  vastaus:
+    - \(27\)
+    - \( x^3 \)
 - ratkaisu: ''
   tehtava:
     - 'Olkoon neliön sivun pituus $x$. Mikä funktio kuvaa neliön pinta-alaa? Jos kyseessä on kuution pohjaneliö, niin mikä funktio kuvaa kuution tilavuutta? Entä vaipan pinta-alaa?'
-  vastaus: ''
+  vastaus:
+    - \( x\mapsto x^2 \), \(x\mapsto x^3\), \(x \mapsto 6x^2\)
 - ratkaisu: ''
   tehtava:
     - 'Olkoon $f(x)=\sqrt{x}$. Mikä on funktion $f$ arvo pisteessä $32$? Mikä on kuvassa näkyvän funktion arvo pisteessä $4$?'
-    -
     - img: 'neliojuuri.svg'
-  vastaus: ''
+  vastaus:
+    - \( f(32) = \sqrt{32} = 4\sqrt{2} \), \(4\)
 - ratkaisu: ''
   tehtava:
-    - 'Selvitä funktion $f(x) = x^2 - 4$ nollakohdat. (Toisin sanoen ne luvut $x$, joilla pätee $f(x)=0$.)'
-  vastaus: ''
+    - 'Selvitä funktion $f(x) = x^2 - 4$ nollakohdat.'
+  vastaus:
+    - \( x = \pm2 \). 
 - ratkaisu: ''
   tehtava:
     - Olkoon $f(x)=2x+9$ ja $g(x)=12x-1$. Millä $x$:n arvolla pätee $f(x)=g(x)$?
-  vastaus: ''
+  vastaus:
+    - \( x = 1 \)
 - ratkaisu: ''
   tehtava:
     - Piirrä funktion $f(x) = 2x-5$ kuvaaja.
-  vastaus: ''
+  vastaus:
+    - img: kuvaaja_2x-5.svg
 - ratkaisu: ''
   tehtava:
     - 'Olkoon $f(x)=-4x^{-3}$ ja $ \displaystyle g(x)=\frac{1}{2}(-x)^{2}$. Määritä'
@@ -148,15 +189,21 @@
       - \( p(6) \)
       - \( p(p(6)) \)
       - \( p(p(p(6)))\)
-  vastaus: ''
+  vastaus:
+    - \( 3 \)
+    - \( 12 \)
+    - \( 6 \)
 - ratkaisu: ''
   tehtava:
     - 'Olkoon $f(x) = 2x +1$. Etsi funktio $g$, jolle pätee $g(f(x)) = x$.'
-  vastaus: ''
+  vastaus:   
+    - \(g(x) = \frac{x-1}{2}\)
 - ratkaisu: ''
   tehtava:
     - 'Olkoon $\displaystyle g(x) = \frac{2x-1}{x+1}$. Laske'
     -
       - \(g(2)\)
       - \(g(a-1)\)
-  vastaus: ''
+  vastaus:
+    - \( 1 \)
+    - \( 2-\frac{3}{a} \)

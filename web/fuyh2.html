@@ -1,0 +1,137 @@
+---
+layout: exsheet
+title: Funktiot ja yhtälöt
+---
+
+<div class="large-12 columns">
+	<header>
+
+		<h1>{{page.title}}</h1>
+		<h3>{{site.data.fuyh.size}} tehtävää</h3>
+
+	</header>
+
+</div>
+<div id="control-buttons">
+	<ul class="button-group">
+		<li><a class="prev" href="">Edellinen</a></li>
+		<li><a class="answer" href="">Näytä vastaus</a></li>
+		<li><a class="next" href="">Seuraava</a></li>
+	</ul>
+</div>
+
+<div class="large-12 columns">
+	{% for tehtava in site.data.fuyh %}
+
+
+
+	<section id="tehtava{{forloop.index}}">
+
+		<h1 class="teht"></h1>
+
+		<div class="problem">
+			{% for piece in tehtava.tehtava %}
+			{% if piece.first %}
+			{% case piece.first[0] %}
+			{% when 'img' %}
+			<div style="text-align:center">
+				<img style="width:80%; background:white" src="{{ piece.first[1] | prepend: '/imgs/' | prepend: site.baseurl }}">
+			</div>
+			{% else %}
+			<ol>
+				{% for item in piece %}
+
+				<li> {{ item }} </li>
+
+				{% endfor %}
+			</ol>
+			{% endcase %}
+			{% else %}
+			{{ piece }}
+			{% endif %}
+			{% endfor %}
+		</div>
+		<div class="answer">
+			{% if tehtava.vastaus.size > 1 %}
+			<ol>
+				{% for item in tehtava.vastaus %}
+
+				<li> {{ item }} </li>
+
+				{% endfor %}
+			</ol>
+			{% else %}
+			{{ tehtava.vastaus[0] }}
+			{% endif %}
+
+		</div>
+<!-- 
+{% for piece in tehtava.tehtava %}
+
+{% if forloop.first %}
+
+	<section>
+
+	<h1 class="teht"></h1>
+
+	<p> {{ piece }} </p>
+
+{% endif %}
+
+{% if piece.first %}
+	{% case piece.first[0] %}
+		{% when 'img' %}
+			<div style="text-align:center">
+				<img style="width:80%; background:white" src="{{ piece.first[1] | prepend: '/imgs/' | prepend: site.baseurl }}">
+			</div>
+		{% else %}
+			<ol>
+			{% for item in piece %}
+
+				<li> {{ item }} </li>
+
+			{% endfor %}
+			</ol>
+	{% endcase %}
+
+{% elsif forloop.index > 1 %}
+
+	</section>
+
+	<section>
+		{{ piece }}
+
+{% endif %}
+
+{% if forloop.last %}
+
+	</section>
+
+{% endif %}
+
+{% endfor %}
+
+	<section>
+	<h2> Vastaus: </h2>
+	{% if tehtava.vastaus.size > 1 %}
+	<ol>
+		{% for v in tehtava.vastaus %}
+		<li> {{v}} </li>
+		{% endfor %}
+	</ol>
+	{% elsif tehtava.vastaus[0].img %}
+
+	<img src="{{tehtava.vastaus[0].img | prepend: '/imgs/' | prepend: site.baseurl}}">
+
+	{% else %}
+
+	{{tehtava.vastaus}}
+
+	{% endif %}
+
+</section> -->
+
+</section>
+
+{% endfor %}
+</div>

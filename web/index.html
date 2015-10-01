@@ -8,8 +8,6 @@ layout: default
     <p>Ensimmäisen osan tehtävät keskittyvät laskurutiinin kehittämiseen ja perusasioiden kertaamiseen. Toisen osan tehtävät puolestaan differentiaali- ja integraalilaskennan kertaamiseen. Mukana on myös hieman kombinatoriikkaa, todennäköisyyslaskentaa ja analyyttistä geometriaa. </p>
     <p>Tehtävät löytyvät alta mobiiliversioina ja pdf-tiedostoina.</p>
 
-    
-    <!-- <a id="download-pdf" class="button right" href="extras.html#{{section.href}}"><i class="fa fa-download"></i> Osa 2 (pdf) </a> -->
     <ul class="tabs" data-tab>
         <li class="tab-title active"><a href="#panel-osa1">Osa 1</a></li>
         <li class="tab-title"><a href="#panel-osa2">Osa 2</a></li>
@@ -27,8 +25,9 @@ layout: default
             {% endfor %}            
         </div>
     </div>
+
     <div class="large-12 large-centered columns">
-        <ul class="button-group even-3">
+        <ul class="button-group stack-for-small">
             <li> 
                 <a id="download-pdf" class="button" href="extras.html#{{section.href}}"><i class="fa fa-download"></i> Osa 1</a>
             </li>
@@ -36,7 +35,7 @@ layout: default
                 <a id="download-pdf" class="button" href="extras.html#{{section.href}}"><i class="fa fa-download"></i> Osa 2</a>
             </li>
             <li> 
-                <a id="download-pdf" class="button" href="extras.html#{{section.href}}"><i class="fa fa-download"></i> Osat 1&2</a>
+                <a id="download-pdf" class="button" href="extras.html#{{section.href}}"><i class="fa fa-arrow-right"></i> Stack-tehtävät</a>
             </li>
         </ul>
     </div>

@@ -12,26 +12,15 @@
                         <div class="row">
                               <div class="large-12 columns">
                                     <p>{{ section.kuvaus }}</p>
-                                    <dl>
-                                          {% for n in section.notes %}
-                                          {% if n.first %}
-                                          <dt>{{n.first[0]}}</dt>
-                                          {% for m in n.first[1] %}
-                                          <dd>{{m}}</dd>
-                                          {% endfor %}
-                                          {% else %}
-                                          <dt>{{n}}</dt>
-                                          {% endif %}
-
-                                          {% endfor %}
-                                    </dl>
                               </div>
 
                               <div class="large-12 right columns"> 
                                     <ul class="button-group stack-for-small">
-                                      <li> <a class="button" href="notes/{{section.context}}.html#{{section.href}}"> <i class="fa fa-lightbulb-o"></i> Huomioita</a></li>
+                                      <li> 
+                                        <a class="button" href="{{section.context | prepend: site.baseurl }}.html#{{section.href}}"> 
+                                          <i class="fa fa-lightbulb-o"></i> Huomioita</a></li>
                                       <li><a class="button" href="{{section.href}}.html"><i class="fa fa-mobile"></i> Tehtävät </a></li>
-                                      <li> <a class="button" href="extras.html#{{section.href}}"> <i class="fa fa-angle-double-right"></i> Stack-tehtävät</a></li>
+                                      <!-- <li class="hide"> <a class="button" href="extras.html#{{section.href}}"> <i class="fa fa-angle-double-right"></i> Stack-tehtävät</a></li> -->
                                     </ul>      
                               </div>  
                         </div>
