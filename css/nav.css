@@ -1,0 +1,29 @@
+.flex-nav {
+  display: flex;
+  align-items: center;
+  background: #E5BB31;
+  padding: 0.9375rem;
+  justify-content: flex-end;
+  margin-bottom: 2.5rem; }
+  .flex-nav a {
+    color: white;
+    font-weight: 900; }
+  .flex-nav .title {
+    flex: 1;
+    font-size: 1.5em; }
+  .flex-nav .items {
+    float: right; }
+    .flex-nav .items a {
+      text-decoration: none;
+      position: relative;
+      margin: 0 0.9375rem; }
+      .flex-nav .items a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid white;
+        transition: 0.4s; }
+      .flex-nav .items a:hover:after {
+        width: 100%; }

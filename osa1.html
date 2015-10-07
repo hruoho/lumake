@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="fi">
+<head>
+      
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lukiomatematiikan kertauskurssi</title>
+  
+  <meta name="description" content="Tämä sivu on olemassa voidakseni tarjota kurssin tehtävät nykyaikaisessa muodossa.
+">
+
+  <link rel="stylesheet" href="/lumake/css/app.css">
+  <link rel="stylesheet" href="/lumake/css/font-awesome/css/font-awesome.min.css">
+
+  <link rel="canonical" href="http://hruoho.github.io/lumake/osa1.html">
+  <link rel="alternate" type="application/rss+xml" title="Lukiomatematiikan kertauskurssi" href="http://hruoho.github.io/lumake/feed.xml" />
+
+  <script src="/lumake/bower_components/foundation/js/vendor/modernizr.js "></script>
+
+
+
+
+
+      <div class="hide">
+      \(
+      \newcommand{\abs}[1]{\left|#1\right|}
+      \newcommand{\R}{\mathbb{R}}
+      \newcommand{\df}{\,\mathrm{d}}
+      \newcommand{\e}{\mathrm{e}}
+      \)
+</div>
+
+      <link rel="stylesheet" href="/lumake/css/exsheet.css">
+      <link rel="stylesheet" href="/lumake/css/nav.css">
+      <link rel="stylesheet" href="/lumake/css/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+
+
+<body>
+      <nav class="flex-nav clearfix">
+
+	<a class="title" href="/lumake/ ">LuMaKe</a>
+	<div class="items right">
+		<a href="/lumake/info.html">Ohjeet</a>
+		<a href="/lumake/exindex.html">Tehtävät</a>
+		<a href="//lumakeosa1.html">Kertaus</a>
+	</div>
+</nav>
+
+      <div class="row">
+            <div class="row small-collapse medium-uncollapse">
+
+    <div class="large-12 columns">
+        <div class="hide-for-large-up">
+            <ul class="tabs vertical extra-tabs" data-tab data-options="deep_linking:true">
+                <li class="tab-title active"><a href="#lala">Lausekkeet ja laskutoimitukset</a></li>
+                <li class="tab-title"><a href="#fuyh">Funktiot ja yhtälöt</a></li>
+                <li class="tab-title"><a href="#polo">Potenssi ja logaritmi</a></li>
+                <li class="tab-title"><a href="#sete1">Sekalaisia huomioita</a></li>
+            </ul>
+        </div>
+        <div class="show-for-large-up">
+            <ul class="tabs extra-tabs" data-tab data-options="deep_linking:true">
+                <li class="tab-title active"><a href="#lala">Lausekkeet ja laskutoimitukset</a></li>
+                <li class="tab-title"><a href="#fuyh">Funktiot ja yhtälöt</a></li>
+                <li class="tab-title"><a href="#polo">Potenssi ja logaritmi</a></li>
+                <li class="tab-title"><a href="#sete1">Sekalaisia huomioita</a></li>
+            </ul>
+        </div>
+        <div class="tabs-content">
+            <div class="content active" id="lala">
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-one huge-text"> -->
+
+	<p><p>Reaalilukujen joukkoa \(\R\) voi kuvata <strong>lukusuoralla</strong>. Silloin jokainen reaaliluku vastaa yhtä lukusuoran pistettä ja 
+jokainen suoran piste yhtä lukua.</p>
+</p>
+
+	
+	<div class="centered">
+		<img width="700" src="/imgs/lukusuora.svg">
+	</div>
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-two huge-text"> -->
+
+	<p><p>Reaaliluvun \(a\) <strong>itseisarvo</strong> \(\abs{a}\) tarkoittaa luvun etäisyyttä origosta. Luvun itseisarvo on siis aina positiivinen tai 0.</p>
+</p>
+
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-three huge-text"> -->
+
+	<p><p>Luvun \(a\) <strong>vastaluku</strong> on \(-a\). Se on reaaliluku, joka toteuttaa ehdon \(a+(-a) = 0\).</p>
+
+<p>Luku ja sen vastaluku ovat yhtä kaukana origosta eli pätee \(\abs{a} = \abs{-a}\).
+<img src="imgs/itseisarvo.svg" alt="" style="width:90%" /></p>
+</p>
+
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-four huge-text"> -->
+
+	<p><p>Luvun \(a\neq0\) <strong>käänteisluku</strong> on \(\displaystyle a^{-1} = \frac{1}{a}\). Se on reaaliluku ja toteuttaa ehdon 
+\(\displaystyle a\cdot a^{-1} = 1\). Luku \(0\) on ainoa reaaliluku, jolla ei ole käänteislukua.</p>
+</p>
+
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-one huge-text"> -->
+
+	<p><p>Reaalilukuja voidaan laskea yhteen ja kertoa keskenään. Lopputuloksena on edelleen reaaliluku.</p>
+
+<p>Luvun vähentäminen tarkoittaa vastaluvun lisäämistä, eli \(a - b = a + (-b)\).</p>
+
+<p>Luvulla jakaminen tarkoittaa käänteisluvulla kertomista, eli \( a / b = a\cdot b^{-1}\).</p>
+
+<p>Koska luvulla \(0\) ei ole käänteislukua, sillä ei voida jakaa.</p>
+</p>
+
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-two huge-text"> -->
+
+	<p><p>Reaalilukujen \(a\) ja \(b\) osamäärä on reaaliluku \(\displaystyle\frac{a}{b}\). Yläkertaa kutsutaan <strong>osoittajaksi</strong> ja alakertaa <strong>nimittäjäksi</strong>.</p>
+
+<p>Osamäärän <strong>laventaminen</strong> tarkoittaa osoittajan ja nimittäjän kertomista samalla luvulla.</p>
+
+<p>Osamäärän <strong>supistaminen</strong> tarkoittaa osoittajan ja nimittäjän jakamista samalla luvulla.</p>
+</p>
+
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-three huge-text"> -->
+
+	<p><p>Osamäärien yhteen- ja vähennyslaskua varten luvut saatetaan ensin samannimisiksi laventamalla tai supistamalla.</p>
+
+<p>Kertolaskua varten osamäärien ei tarvitse olla samannimisia vaan laskutoimitus suoritetaan sekä osoittajassa että nimittäjässä.</p>
+</p>
+
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-four huge-text"> -->
+
+	<p><p>Lausekkeita käsitellessä seuraavat muistikaavat tulevat usein käyttöön.</p>
+
+<dl>
+  <dt>Binomin neliö:</dt>
+  <dd>\(\displaystyle (x + y)^2 = x^2 + 2xy+y^2  \)</dd>
+  <dd>\(\displaystyle (x - y)^2 = x^2 - 2xy+y^2  \)</dd>
+  <dt>Summan ja erotuksen tulo:</dt>
+  <dd>\( (x+y)(x-y) = x^2-y^2 \)</dd>
+</dl>
+
+<p>Niiden johtaminen on suoraviivaista.</p>
+</p>
+
+	
+	
+</div>
+
+                
+
+                
+
+<div class="color-box huge-text">
+<!-- color-one huge-text"> -->
+
+	<p><p>Binomin korkeampia potensseja voi tarvittaessa käsitellä Pascalin kolmion avulla. 
+Sen mukaan esimerkiksi \( (a+b)^4 = a^4 +4a^3b + 6a^2b^2 +4ab^3 +b^4\).
+Välitermien kertoimet selviävät eksponenttia vastaavalta kolmion riviltä.</p>
+</p>
+
+	
+	<div class="centered">
+		<img width="700" src="/imgs/pascal.svg">
+	</div>
+	
+	
+</div>
+
+                
+            </div>
+            <div class="content" id="fuyh">
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-two huge-text"> -->
+
+	<p><p>Yhtälö</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-three huge-text"> -->
+
+	<p><p>Yhtälön ratkaiseminen tarkoittaa niiden muuttujan arvojen selvittämistä, joilla yhtälö toteutuu eli on tosi eli pitää paikkansa eli pätee.</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-four huge-text"> -->
+
+	<p><p>Ensimmäisen asteen yhtälö</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-one huge-text"> -->
+
+	<p><p>Toisen asteen yhtälö</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-two huge-text"> -->
+
+	<p><p>Korkeamman asteen yhtälöt</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-three huge-text"> -->
+
+	<p><p>Funktiolla on lähtöjoukko ja maalijoukko. Esimerkiksi merkintä (f\colon\R\to\R) tarkoittaa funktiota (f), 
+jonka lähtö- ja maalijoukko on (\R). Funktion arvot ovat yksikäsitteisiä. 
+Niiden pisteiden joukkoa, jossa funktio on määritelty, kutsutaan määrittelyjoukoksi.</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-four huge-text"> -->
+
+	<p><p>Funktion kuvaaja</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-one huge-text"> -->
+
+	<p><p>Määrittelyjoukko ja arvojoukko</p>
+</p>
+
+	
+	
+</div>
+
+               
+           </div>
+           <div class="content" id="polo">
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-two huge-text"> -->
+
+	<p><p>Potenssin määritelmä</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-three huge-text"> -->
+
+	<p><p>Laskusäännöt</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-four huge-text"> -->
+
+	<p><p>Logaritmin määritelmä</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-one huge-text"> -->
+
+	<p><p>Logaritmin laskusäännöt</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-two huge-text"> -->
+
+	<p><p>Eksponenttiyhtälön ratkaiseminen</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-three huge-text"> -->
+
+	<p><p>Eksponenttifunktio</p>
+</p>
+
+	
+	
+</div>
+
+               
+           </div>
+           <div class="content" id="sete1">
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-four huge-text"> -->
+
+	<p><p>Ensimmäisen asteen epäyhtälöt</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-one huge-text"> -->
+
+	<p><p>Toisen asteen epäyhtälöt</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-two huge-text"> -->
+
+	<p><p>Suoran yhtälö</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-three huge-text"> -->
+
+	<p><p>Ympyrän yhtälö</p>
+</p>
+
+	
+	
+</div>
+
+               
+
+               
+
+<div class="color-box huge-text">
+<!-- color-four huge-text"> -->
+
+	<p><p>Polynomin jako tekijöihin</p>
+</p>
+
+	
+	
+</div>
+
+               
+           </div>
+
+       </div>
+   </div>
+</div>
+
+
+
+      </div>
+
+
+      <script src="/lumake/bower_components/jquery/dist/jquery.min.js"></script>
+
+      <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                  extensions: ["tex2jax.js"],
+                  jax: ["input/TeX", "output/HTML-CSS"],
+                  tex2jax: {
+                        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                        processEscapes: false
+                  },
+                  "HTML-CSS": { availableFonts: ["TeX"] }
+            });
+      </script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      <script src="/lumake/bower_components/foundation/js/vendor/fastclick.js "></script>
+      <script src="/lumake/bower_components/foundation/js/foundation.min.js "></script>
+
+      <script type="text/javascript">
+            $(document).foundation();
+      </script>
+
+      <script src="/lumake/js/sections.js"></script>
+
+
+
+</body>
+</html>

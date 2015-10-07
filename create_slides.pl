@@ -80,6 +80,27 @@ title: $title
 {% endif %}
 
 {% endfor %}
+
+	<section>	
+		<h2> Vastaus: </h2>
+		{% if tehtava.vastaus.size > 1 %}
+		<ol>
+			{% for v in tehtava.vastaus %}
+			<li> {{v}} </li>
+			{% endfor %}
+		</ol>
+		{% elsif tehtava.vastaus[0].img %}
+
+		<img src="{{tehtava.vastaus[0].img | prepend: '/imgs/' | prepend: site.baseurl}}">
+
+		{% else %}
+
+		{{tehtava.vastaus}}
+
+		{% endif %}
+
+	</section>
+
 </section>
 
 {% endfor %}
